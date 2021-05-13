@@ -1,13 +1,73 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  background-color: #ffffff
+} 
+
+
+ 
+
+.pag2_btn{
+  float:right;
+  color:red;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.pag1_btn{
+  float : right;
+  color:red;
+}
+
+
+.pag1_btn{
+  margin-right: 15px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 4px;
+  color: blueviolet;
+  box-shadow: 1px 1px 5px 5px #f2f2f5;
+}
+
+.pag1_btn:hover{
+  cursor: pointer;
+  background-color: aqua;
+}
+
+.show_btn{
+  margin-top: -10px;
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 4px;
+  color: blueviolet;
+  box-shadow: 1px 1px 5px 5px #f2f2f5;
+}
+
+.show_btn:hover{
+  cursor: pointer;
+  background-color: aqua;
+}
+
+.piechart{
+  /* position: relative; */
+}
+
+#piechart{
+  font-style: italic;
+  color: rgb(189, 93, 56);
+
+ margin-top: 10px;
+   
+}
+
+.pag2_btn{
+  margin-top: 10px;
+  margin-right: 15px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 4px;
+  color: blueviolet;
+  box-shadow: 1px 1px 5px 5px #f2f2f5;
+}
+
+.pag2_btn:hover{
+  cursor: pointer;
+  background-color: aqua;
 }

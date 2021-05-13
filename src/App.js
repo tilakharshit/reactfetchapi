@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+ import React from 'react';
+ import {Route , Switch} from 'react-router-dom';
+ import Navbarmenu from './Navbarmenu';
+import Piechart from './Piechart';
+import Tablechart from './Tablechart';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const Error =()=>{
+  return <h1>OOps!! page not found!</h1>
 }
-
-export default App;
+ 
+ const App = () => {
+   return (
+     <>
+     <Navbarmenu/>
+     <Switch>
+       <Route exact path='/' component={Tablechart} />
+       <Route exact path='/Piechart' component={Piechart} />
+       <Route component={Error}/>
+     </Switch>
+       
+     </>
+   )
+ }
+ 
+ export default App
+ 

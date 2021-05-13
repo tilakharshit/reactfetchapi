@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.table{
+    /* border: 1px solid blueviolet;
+    padding: 100px;
+    width: 70vw;
+    height: 70vh; */
+}
+
+h1{
+    margin-left: 150px;
+}  
+
+.header_btn{
+    position: relative;
+      
+}
+
+.btn{
+    position:absolute;
+    top:10px;
+    left:5px;
+    border: 2px solid ;
+    border-radius: 4px; 
+    padding: 10px;
+    
+  border: 1px solid;
+  border-radius: 4px;
+  color: blueviolet;
+  box-shadow: 1px 1px 5px 5px #f2f2f5;
+
+    
+}
+
+.btn:hover{
+    background-color:aqua;
+    cursor: pointer;
+     
+}
