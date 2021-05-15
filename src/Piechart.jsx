@@ -23,37 +23,31 @@ const Piechart = () => {
       console.log( res.data.Countries[76].NewConfirmed);
       console.log( res.data.Countries[76].NewDeaths);
       console.log('getting the data');
-      const country = res.data.Countries;
+      const country = res.data.Countries[76];
       const confirmcase = res.data.Countries.TotalConfirmed; 
        
-      setContent({
-        name : 'NewConfirmed', value : res.data.Countries[76].NewConfirmed,
-        name : 'NewDeaths', value : res.data.Countries[76].NewDeaths,
-        name : 'NewRecovered', value : res.data.Countries[76].NewRecovered,
-        name : 'TotalConfirmed', value : res.data.Countries[76].TotalConfirmed,
-        name : 'TotalDeaths', value : res.data.Countries[76].TotalDeaths,
-        name : 'TotalRecovered', value : res.data.Countries[76].TotalRecovered,
-        
-      });
+      setContent(country);
+      console.log(country);
+      console.log(res.data.Countries[76].NewDeaths);
+      console.log('country getting-----------')
        
     }
     getData();
 
   }
   
-  
-  const data01 = [
-     { name: 'NewConfirmed', value: 362727},
-    //  { name: 'NewDeaths', value: 4120 },
-    { name: 'NewRecovered', value: 352181 },
-    { name: 'TotalConfirmed', value: 23703665 },
-    { name: 'TotalDeaths', value: 258317 },
-    { name: 'TotalRecovered', value: 19734823 },
-     
-   ];
-  
+   
 
-
+   const data02 =[
+    {name : 'NewConfirmed', value : content.NewConfirmed},
+    {name : 'NewDeaths', value : content.NewDeaths},
+    {name : 'NewRecovered', value : content.NewRecovered},
+    {name : 'TotalConfirmed', value : content.TotalConfirmed},
+    {name : 'TotalDeaths', value : content.TotalDeaths},
+    {name : 'TotalRecovered', value : content.TotalRecovered}
+  ]
+   
+  
   return (
     <>
       <div className='piechart'>
@@ -70,7 +64,7 @@ const Piechart = () => {
             dataKey="value"
 
             isAnimationActive={false}
-            data={data01}
+            data={data02}
             cx="50%"
             cy="50%"
             outerRadius={150}
