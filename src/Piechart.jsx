@@ -13,7 +13,10 @@ const Piechart = () => {
   
   const history = useHistory();
   const show = () => {
-  
+    
+    setTimeout(() =>{
+
+    
     async function getData() {
       const res = await axios.get('https://api.covid19api.com/summary');
 
@@ -33,6 +36,8 @@ const Piechart = () => {
        
     }
     getData();
+
+  },7000)
 
   }
   
@@ -58,6 +63,8 @@ const Piechart = () => {
         <button
           onClick={() => history.push('/')}
           className='pag1_btn'>goto page 1</button>
+
+        
 
         <PieChart width={500} height={500}>
           <Pie
